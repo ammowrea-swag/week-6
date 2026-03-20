@@ -41,10 +41,10 @@ USAGE EXAMPLE:
 
   // Resolve local images (those starting with /) using asset()
   // but not external URLs (http://, https://, //, data:)
-  const resolvedSrc = $derived(
-    src.startsWith('/') && !src.startsWith('//') 
-      ? asset(src) 
-      : src
+  const resolvedBackground = $derived(
+    backgroundImage?.startsWith('/') && !backgroundImage.startsWith('//')
+      ? asset(backgroundImage)
+      : backgroundImage
   );
 </script>
 
