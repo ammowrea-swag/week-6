@@ -92,7 +92,7 @@ This is your page!
     </p>
 
     <Image 
-      src = "/images/landscape.jpg"
+      src = "/landscape.jpg"
       alt="Green grass field under blue sky"
       credit="Photo by Inthemomentprints"
 
