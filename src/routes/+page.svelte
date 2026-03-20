@@ -8,6 +8,9 @@ This is your page!
   import ArticleBody from '$lib/components/ArticleBody.svelte';
   import Image from '$lib/components/Image.svelte';
   import RelatedLinks from '$lib/components/RelatedLinks.svelte';
+  import SplashHeader from '../lib/components/SplashHeader.svelte';  
+  import Dashboard from '../lib/components/Dashboard.svelte';
+  import BigNumber from '../lib/components/BigNumber.svelte';
 
   // Article metadata
   let headline = 'Become a force for good. Join our next class.';
@@ -32,19 +35,15 @@ This is your page!
 <div class="container">
   
   <!-- Article Header: Headline, byline, and publication date -->
-  <ArticleHeader
-    {headline}
-    {byline}
-    {pubDate}
+  <SplashHeader
+    headline= "This is a Headline"
+    kicker = "This is a kicker"
+    deck= "This is a deck, it has more words than the kicker and is meant to be a short summary of the article."
+    byline= "Ashley Mowreader"
+  {pubDate}
   />
 
-  <!-- Lead Image: Animated gif of students at the journalism school -->
-  <Image
-    src="/example-photo.gif"
-    alt="The Craig Newmark Graduate School of Journalism is at 219 West 40th Street in Midtown Manhattan."
-    caption="The Craig Newmark Graduate School of Journalism is at 219 West 40th Street in Midtown Manhattan."
-    credit="Craig Newmark Graduate School of Journalism"
-  />
+  
 
   <!-- Article Body: The main story text with proper typography -->
   <ArticleBody>
@@ -59,6 +58,22 @@ This is your page!
     <p>
       Our mission is to serve the public interest – by training new journalists from varied economic, racial, and cultural backgrounds who will bring much-needed diversity to newsrooms, by helping mid-career journalists retool their skills, and by partnering with other media organizations to find new paths to excellence.
     </p>
+
+    <!-- Dashboard -->
+  <Dashboard>
+    <BigNumber
+     number="TK"
+    label="A big number"
+  />
+  <BigNumber
+     number="TK"
+    label="A big number"
+  />
+  <BigNumber
+    number="TK"
+    label="A big number"
+  />
+  </Dashboard>
 
     <p>
       Our low tuition rates, along with the added backing of private donors, allow candidates for our master’s degrees in journalism and engagement journalism to receive a world-class education at an affordable price. We also offer a unique bilingual master’s in journalism for students fluent in English and Spanish.
@@ -76,6 +91,12 @@ This is your page!
       Classes are led by accomplished full-time faculty and adjuncts, who tap their networks to help students and graduates find internships, freelance opportunities and — the ultimate prize — jobs.
     </p>
 
+    <Image 
+      src = src/lib/landscape.jpg
+      alt="Green grass field under blue sky"
+      credit="Photo by Inthemomentprints"
+
+  />
     <p>
       At a time when our profession is reeling from financial pressures and lack of trust, the Newmark Graduate School of Journalism is committed to producing the next generation of skilled, ethically minded, and diverse journalists.
     </p>

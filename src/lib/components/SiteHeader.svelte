@@ -2,6 +2,7 @@
 @component
 SiteHeader.svelte — NYCity News Service Style Header
 -->
+
 <script>
   let {
     navLinks = [],
